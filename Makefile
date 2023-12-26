@@ -102,7 +102,7 @@ ratify-config:
 	
 .PHONY: test
 test:
-	go test -v -coverprofile=coverage.txt -covermode=atomic ./...
+	go test -v -coverprofile=coverage.txt -covermode=atomic -coverpkg=./... ./...
 
 .PHONY: clean
 clean:
